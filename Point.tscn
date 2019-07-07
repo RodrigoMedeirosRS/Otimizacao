@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Point.png" type="Texture" id=1]
+[ext_resource path="res://Point.gd" type="Script" id=2]
+[ext_resource path="res://NewFonte.tres" type="DynamicFont" id=3]
+
+[node name="Point" type="Sprite"]
+texture = ExtResource( 1 )
+hframes = 2
+script = ExtResource( 2 )
+_sections_unfolded = [ "Animation" ]
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -19.0
+margin_top = -16.0
+margin_right = 18.0
+margin_bottom = 16.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 3 )
+text = "000"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
